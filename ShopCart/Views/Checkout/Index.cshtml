@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <h3>CHECKOUT</h3>
+    <div class="container-fluid">
+        <table class="table-primary">
+            <tr>
+                <th>Total Amount</th>
+            </tr>
+            <tr>
+                <td>
+                    @ViewBag.total
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <div class="row">
+            <div class="col-md-6">
+                <form asp-controller="Products" asp-action="Index">
+                    <button type="submit" class="btn btn-primary btn-block">Add More Items</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form action="http://www.dominos.com">
+                    <button type="submit" class="btn btn-primary btn-block">Buy Now</button>
+                    @*<input type="submit" value="Buy Now" />*@
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
