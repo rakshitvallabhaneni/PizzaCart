@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjfgdOmUZnk+PRvm97x1UdwAAAAACAAAAAAAQZgAAAAEAACAAAACrwVTV4jaDlu4I8TAUOMtR/C3d/buPM1eT1NdnaIKUSwAAAAAOgAAAAAIAACAAAAAqpi8oSJYYI+XBX7GE7DG0+cD1/P7av/X40PxYBPPjU4AAAACvvdJSoS2GYnKYto9rfEbla1k6R7ECepZyX1n3PNFXWK4tHfeMmRQt3AgCajK/ZZrHowEIt7LbzLVRktSJL04iAEyH23xRV0iEDpHdisnui+aj+2QaTuYXcHzlD7MsSFR97wLvB7DpblS32wdoe0aFy5C6Yp+lmx7ABeeBfqL8rEAAAAA415RdEPyj99hKcAuAJFo5htHpVmzzRf9HWt73hxBxGotUElEjByB22JB3y0k1RsYZJUgN2ztq1WDF2T2COSJB</EncryptedPassword>
+    <History>True|2021-06-07T21:50:25.4402089Z;True|2021-06-07T17:41:24.5708442-04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AuthDBContextConnection">
+      <Value>Data Source=tcp:pizzacartdbserver.database.windows.net,1433%3bInitial Catalog=PizzaCart_db%3bUser Id=Pizzacartadmin%40pizzacartdbserver%3bPassword=Pizza%40123</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="PizzaCartContext">
+      <Value>Data Source=tcp:pizzacartdbserver.database.windows.net,1433%3bInitial Catalog=PizzaCart_db%3bUser Id=Pizzacartadmin%40pizzacartdbserver%3bPassword=Pizza%40123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="PizzaCart.Data.AuthDBContext">
+      <Value>Data Source=tcp:pizzacartdbserver.database.windows.net,1433%3bInitial Catalog=PizzaCart_db%3bUser Id=Pizzacartadmin%40pizzacartdbserver%3bPassword=Pizza%40123</Value>
+    </EFMigrations>
+    <EFMigrations Include="PizzaCart.Data.PizzaCartContext">
+      <Value>Data Source=tcp:pizzacartdbserver.database.windows.net,1433%3bInitial Catalog=PizzaCart_db%3bUser Id=Pizzacartadmin%40pizzacartdbserver%3bPassword=Pizza%40123</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

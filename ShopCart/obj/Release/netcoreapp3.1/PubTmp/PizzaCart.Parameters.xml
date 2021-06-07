@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="PizzaCart20210607173257" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Temp\\Git\\ShopCartAuth\\ShopCart\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="PizzaCart.Data.AuthDBContext" description="" value="Data Source=tcp:pizzacartdbserver.database.windows.net,1433;Initial Catalog=PizzaCart_db;User Id=Pizzacartadmin@pizzacartdbserver;Password=Pizza@123" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Temp\\Git\\ShopCartAuth\\ShopCart\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\PizzaCart\.Data\.AuthDBContext\.sql$" />
+  </parameter>
+  <parameter name="PizzaCart.Data.PizzaCartContext" description="" value="Data Source=tcp:pizzacartdbserver.database.windows.net,1433;Initial Catalog=PizzaCart_db;User Id=Pizzacartadmin@pizzacartdbserver;Password=Pizza@123" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Temp\\Git\\ShopCartAuth\\ShopCart\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\PizzaCart\.Data\.PizzaCartContext\.sql$" />
+  </parameter>
+</parameters>
